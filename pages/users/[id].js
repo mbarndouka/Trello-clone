@@ -26,11 +26,11 @@ export async function getStaticProps(context){
 
 export default function Details({user}) {
   return (
-    <div className="container">
+    <div className="max-w-sm rounded shadow-lg content-center justify-center">
         <h1>Details</h1>
-        <h3>{user.name}</h3>
-        <h3>{user.email}</h3>
-        <h3>{user.phone}</h3>
+        <h3 className="font-bold text-xl mb-2">Name: {user.name}</h3>
+        <h3 className="text-gray-700 text-base">Email: {user.email}</h3>
+        <h3 className="text-gray-700 text-base">Phone Number: {user.phone}</h3>
     </div>
   )
 }
